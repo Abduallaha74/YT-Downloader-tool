@@ -1,6 +1,6 @@
 DEPI Final Project: Automated Deployment Pipeline with Jenkins and Docker
 
-Week 1: Initial Setup & Planning
+Week 1: Initial Setup & Planningsasdad
  Task 1 : Install Jenkins and Docker: Set up the Jenkins server and Docker on local Enviroment
  
  ![image](https://github.com/user-attachments/assets/23edcae7-2890-4cbf-a147-2a5239b94fc1)
