@@ -149,24 +149,8 @@ Deploy the application using Docker to ensure portability and scalability.
 
 Use Case Diagram:
 
-+---------------------------+
-|      User                 |
-|---------------------------|
-| - Inputs YouTube URL      |
-| - Selects video quality   |
-| - Initiates download      |
-+-----------+---------------+
-            |
-            v
-+-----------+---------------+
-|   Web-Based YouTube       |
-|   Video Downloader        |
-|---------------------------|
-| - Validates URL           |
-| - Fetches video metadata  |
-| - Downloads video         |
-| - Stores video securely   |
-+---------------------------+
+![Screenshot 2025-02-24 235834](https://github.com/user-attachments/assets/158201f6-c3f9-42fa-850c-6498bffde4ba)
+
 
 Use Case Descriptions:
 
