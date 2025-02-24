@@ -167,6 +167,7 @@ Use Case Diagram:
 | - Downloads video         |
 | - Stores video securely   |
 +---------------------------+
+
 Use Case Descriptions:
 
 Input YouTube URL:
