@@ -132,8 +132,84 @@ Non-Functional Requirements
 •	Reliability: Ensure system uptime of 99.9%.
 
 
+4. System Analysis & Design 
+
+1.Problem Statement & Objectives – Define the problem being solved and project 
+goals.
+
+• Use Case Diagram & Descriptions – Identify system actors and interactions.
+• Functional & Non-Functional Requirements – Clearly state system capabilities 
+and constraints.
+• Software Architecture – High-level design outlining system components, 
+interactions, and architecture style (e.g., MVC, Microservices).
+
+2. Database Design & Data Modeling
+
+![ER_Diagram](https://github.com/user-attachments/assets/de7907d3-4c1e-4f08-9cdb-33a45b7969bd)
 
 
+
+
+• ER Diagram (Entity-Relationship Diagram) – A well-defined ERD showcasing 
+database structure and relationships.
+• Logical & Physical Schema – Tables, attributes, keys, and normalization 
+considerations.
+
+
+
+
+
+
+3. Data Flow & System Behavior
+
+![DFD](https://github.com/user-attachments/assets/e6879344-6636-4ddc-9fcd-ce19b1e3d413)
+
+
+ 
+• DFD (Data Flow Diagram) – Context-level and detailed levels showing how 
+data moves through the system.
+• Sequence Diagrams – Process flow representation of key interactions between 
+components.
+• Activity Diagram – Visualizing the workflow of processes or user actions within 
+the system.
+• State Diagram – Represents different states of an object and how it transitions 
+between them.
+• Class Diagram – Defines the structure of the system by showing classes, 
+attributes, methods, and relationships.
+
+
+
+
+
+
+
+
+4. UI/UX Design & Prototyping
+
+
+![Screenshot 2025-02-24 234404](https://github.com/user-attachments/assets/3e6f0f10-6633-4189-b86c-6c06541392bf)
+
+
+
+Wireframes & Mockups:
+
+The UI is designed with a minimalist approach, featuring a centered input form for the YouTube URL.
+
+A dropdown menu allows users to choose the download format (video or audio).
+
+A green "Download" button initiates the process.
+
+A success message appears below upon successful download.
+
+UI/UX Guidelines:
+
+Design Principles: Simple, intuitive, and clean layout.
+
+Color Scheme: White and gray background for contrast with black text and green buttons.
+
+Typography: Clear and bold font for easy readability.
+
+Accessibility Considerations: Large input fields and buttons for usability across devices.
 
 
 
