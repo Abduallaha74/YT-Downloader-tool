@@ -304,4 +304,24 @@ Typography: Clear and bold font for easy readability.
 Accessibility Considerations: Large input fields and buttons for usability across devices.
 
 
+5. System Deployment & Integration
+
+![Component_Diagram](https://github.com/user-attachments/assets/014c9e5b-f5b6-41d1-8005-00b561a7c94b)
+
+
+![Deployment_Diagram](https://github.com/user-attachments/assets/64fa71c4-4a42-4eb3-9058-4a8e47a72478)
+
+
+
+• Technology Stack – Backend, frontend, and database technologies.
+
+• Deployment Diagram – Describes how software components are distributed 
+across hardware.
+
+• Component Diagram – Shows high-level system components and their 
+dependencies.
+
+
+
+
 
