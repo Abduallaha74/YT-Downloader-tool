@@ -134,14 +134,121 @@ Non-Functional Requirements
 
 4. System Analysis & Design 
 
-1.Problem Statement & Objectives – Define the problem being solved and project 
-goals.
+1. Problem Statement & Objectives
 
-• Use Case Diagram & Descriptions – Identify system actors and interactions.
-• Functional & Non-Functional Requirements – Clearly state system capabilities 
-and constraints.
-• Software Architecture – High-level design outlining system components, 
-interactions, and architecture style (e.g., MVC, Microservices).
+Problem Statement: With the vast amount of content available on YouTube, users often seek ways to download videos for offline viewing, educational purposes, or content archiving. However, YouTube does not provide a native feature for downloading videos, leading users to rely on third-party applications that may be unreliable, lack user-friendliness, or pose security risks.
+
+Objectives:
+
+Develop a user-friendly web application that enables users to download YouTube videos by entering the video URL.
+Ensure the application fetches videos in the highest available resolution.
+Implement a secure and efficient storage mechanism for downloaded videos within a containerized environment.
+Deploy the application using Docker to ensure portability and scalability.
+
+2. Use Case Diagram & Descriptions
+
+Use Case Diagram:
+
++---------------------------+
+|      User                 |
+|---------------------------|
+| - Inputs YouTube URL      |
+| - Selects video quality   |
+| - Initiates download      |
++-----------+---------------+
+            |
+            v
++-----------+---------------+
+|   Web-Based YouTube       |
+|   Video Downloader        |
+|---------------------------|
+| - Validates URL           |
+| - Fetches video metadata  |
+| - Downloads video         |
+| - Stores video securely   |
++---------------------------+
+Use Case Descriptions:
+
+Input YouTube URL:
+
+Actor: User
+Description: The user inputs the URL of the desired YouTube video into the application.
+Select Video Quality:
+
+Actor: User
+Description: The user selects the preferred video quality from the available options.
+Initiate Download:
+
+Actor: User
+Description: The user initiates the download process after selecting the desired video quality.
+Validate URL:
+
+Actor: Web Application
+Description: The system validates the provided YouTube URL to ensure it is correct and accessible.
+Fetch Video Metadata:
+
+Actor: Web Application
+Description: The system retrieves metadata such as video title, available resolutions, and formats.
+Download Video:
+
+Actor: Web Application
+Description: The system downloads the video in the selected quality and format.
+Store Video Securely:
+
+Actor: Web Application
+Description: The system stores the downloaded video securely within a containerized environment for user access.
+
+3. Functional & Non-Functional Requirements
+
+Functional Requirements:
+
+The system shall allow users to input a YouTube video URL.
+The system shall validate the correctness of the provided URL.
+The system shall retrieve and display available video resolutions and formats.
+The system shall enable users to select their preferred video quality.
+The system shall download the selected video and store it securely.
+The system shall provide users with a link to download the stored video file.
+
+Non-Functional Requirements:
+
+Performance: The system should process video downloads efficiently, minimizing wait times.
+Usability: The user interface should be intuitive and accessible to users with varying technical expertise.
+Security: Downloaded videos should be stored securely to prevent unauthorized access.
+Scalability: The system should handle multiple download requests simultaneously without performance degradation.
+Compliance: The application must comply with YouTube's terms of service and copyright regulations.
+
+4. Software Architecture
+
+Architecture Style: Model-View-Controller (MVC)
+
+Components:
+
+Model:
+
+Manages the data and business logic related to video downloads.
+Interacts with external APIs or libraries to fetch video data.
+Handles storage of downloaded videos within the containerized environment.
+View:
+
+Represents the user interface of the web application.
+Provides forms for URL input and displays available video quality options.
+Shows download progress and provides links to downloaded videos.
+Controller:
+
+Handles user input and interactions.
+Validates input data and coordinates between the Model and View components.
+Manages the workflow of fetching video metadata, processing downloads, and storing files.
+Interactions:
+
+Users interact with the View to input URLs and select video quality.
+The Controller processes user inputs, invoking the Model to handle data operations.
+The Model retrieves necessary data and performs download operations, updating the Controller.
+The Controller updates the View to reflect the current state and provide feedback to the user.
+Deployment:
+
+The application will be containerized using Docker, ensuring consistency across different environments.
+A mounted volume within the Docker container will securely store downloaded videos.
+The web application will be accessible through standard web browsers, providing cross-platform compatibility.
 
 2. Database Design & Data Modeling
 
