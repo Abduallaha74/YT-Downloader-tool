@@ -70,3 +70,70 @@ KPIs (Key Performance Indicators)
 •	Uptime: 99.9%
 •	User Adoption Rate: > 80% retention rate
 •	Download Success Rate: > 95%
+
+
+2. Literature Review
+
+Feedback & Evaluation
+
+•	The project will be assessed based on functionality, security, and user experience.
+•	Lecturer will provide periodic feedback on project progress.
+
+Suggested Improvements
+
+•	Introduce batch downloading.
+•	Implement user authentication for personalized experiences.
+•	Optimize storage with auto-deletion policies.
+
+Final Grading Criteria
+
+Criteria	Weight (%)
+Documentation	20%
+Implementation	40%
+Testing	20%
+Presentation	20%
+
+3. Requirements Gathering
+
+Stakeholder Analysis
+Stakeholder	Role	Needs
+Users	End-Users	Easy-to-use interface, high-quality downloads
+Developers	System Builders	Clear API documentation, scalable architecture
+Legal Team	Compliance	Ensure adherence to policies
+
+User Stories & Use Cases
+
+User Stories:
+
+1.	As a user, I want to enter a YouTube URL and download the best quality video.
+2.	As an admin, I want to manage storage and delete old videos.
+
+Use Case Example:
+
+Title: Download YouTube Video Actors: User, System Precondition: User has a YouTube video URL. Steps:
+
+1.	User inputs URL
+2.	System fetches video metadata
+3.	System processes and stores video
+4.	User downloads the video
+
+Functional Requirements
+
+•	Input field for video URL.
+•	Automatic fetching of highest resolution.
+•	Download button with storage integration.
+•	Error handling for invalid URLs.
+
+Non-Functional Requirements
+
+•	Performance: Must process videos within 3 seconds.
+•	Security: Secure data handling & prevent unauthorized access.
+•	Usability: Intuitive and accessible user interface.
+•	Reliability: Ensure system uptime of 99.9%.
+
+
+
+
+
+
+
